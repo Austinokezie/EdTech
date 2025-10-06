@@ -1,0 +1,66 @@
+
+
+
+  
+
+
+ 
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 30px;
+    line-height: 1.6;
+}
+.content h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.content p{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+.testimonail-container{
+    background-color: #a5b0e6;
+}        
+    
+
+ /* .testimonial{
+    lg:text-left
+    max-w-lg
+    mx-auto
+}  */
+
+
+
+
+.hero{
+    background-image: url(../images/edtech\ girl.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 80px;
+    color: #fff;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .hero{
+        padding: 0 20px;
+        height: auto;
+        background-position: center top;
+    }
+    
+}
+
+  
+

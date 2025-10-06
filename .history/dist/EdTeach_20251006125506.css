@@ -61,15 +61,13 @@
 }
 .overlay-box{
     background: white;
-    color: #1e293b;
     padding: 25px 30px;
     border-radius: 10px;
     max-width: 420px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 2;
+    z-index: 1;
     position: relative;
-    margin-top: 150px;
-    /* margin-left: 0; */
+    margin-left: 0;
 }
 
 
@@ -81,8 +79,8 @@
 @media (max-width: 768px) {
     .hero{
         justify-content: center;
-        padding: 10px 10px 10px;
-        height: 50vh;
+        padding: 0 20px;
+        height: auto;
         background-position: center top;
         /* background-position: bottom top; */
 
@@ -90,7 +88,7 @@
     .overlay-box{
         padding: 20px;
         max-width: 90%;
-        margin: 100px auto  0 auto;
+        margin: 0 auto;
         text-align: center;
     }
     .overlay-box h4{

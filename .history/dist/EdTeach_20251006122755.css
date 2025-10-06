@@ -45,8 +45,9 @@
     background-position: center;
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     padding: 0 80px;
     color: #fff;
     z-index: 1;
@@ -55,52 +56,22 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 0;
 
 }
-.overlay-box{
-    background: white;
-    color: #1e293b;
-    padding: 25px 30px;
-    border-radius: 10px;
-    max-width: 420px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 2;
-    position: relative;
-    margin-top: 150px;
-    /* margin-left: 0; */
-}
 
-
-/* .hero >*{
+.hero >*{
     position: relative;
     z-index: 1;
-} */
+}
 
 @media (max-width: 768px) {
     .hero{
-        justify-content: center;
-        padding: 10px 10px 10px;
-        height: 50vh;
+        padding: 0 20px;
+        height: auto;
         background-position: center top;
-        /* background-position: bottom top; */
-
     }
-    .overlay-box{
-        padding: 20px;
-        max-width: 90%;
-        margin: 100px auto  0 auto;
-        text-align: center;
-    }
-    .overlay-box h4{
-        font-size: 1.1rem;
-    }
-    .overlay-box p{
-        font-size: 0.85rem;
-
-    }
-
     
 }
 
