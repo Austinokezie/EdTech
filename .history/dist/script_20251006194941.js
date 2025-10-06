@@ -24,13 +24,13 @@ close.addEventListener("click", (e)=>{
 });
 
 
-window.addEventListener("scroll", () => {
-  const header = document.querySelector(".header");
-  if (window.scrollY > 20) {
-    header.style.backdropFilter = "blur(14px)";
-    header.style.backgroundColor = "rgba(255, 255, 255, 0.85)";
-  } else {
-    header.style.backdropFilter = "blur(10px)";
-    header.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
-  }
-});
+// window.addEventListener("scroll", () => {
+//   const header = document.querySelector(".header");
+//   if (window.scrollY > 20) {
+//     header.style.backdropFilter = "blur(14px)";
+//     header.style.backgroundColor = "rgba(255, 255, 255, 0.85)";
+//   } else {
+//     header.style.backdropFilter = "blur(10px)";
+//     header.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
+//   }
+// });

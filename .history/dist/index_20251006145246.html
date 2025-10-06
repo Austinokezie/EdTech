@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="EdTeach.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/988c5ad863.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -16,42 +16,25 @@
         <div class="logo text-2xl font-bold font-serif">
             <h5>School<span class="text-orange-400">4U</span></h5>
         </div>
-       
-          <div class="navbar-container">
-              
-                <ul class="navbar flex font-serif">
-                  <a href="#" id="close"><img src="../images/icons8-cancel-80.png" alt=""></a>
-                 <li class="">
-                   <a class="hover:bg-gray-500 transition ease"   href="">Home</a>
-                 </li>
-                 <li>
-                   <a class="hover:bg-gray-500 transition " href="">About Us</a>
-                  </li>
-                  <li class="">
-                   <a class="hover:bg-gray-500 transition " href="">Categories</a>
-                  </li>
-                  <li class="mobilebtn  ">
-                    <button class="text-primary py-2 px-4 rounded-lg border border-blue-600
-                      hover:bg-sky-600 hover:text-white transition duration-300">Log in
-                    </button>
-                    <button class="text-primary py-2 px-4 rounded-lg border
-                      border-blue-600 hover:bg-sky-700
-                      hover:text-white transition duration-300">Sign In
-                    </button>
-                  </li>
-                  
-                </ul> 
-              
-
-            </div>
-            
-              
-              
-              <a href="#" id="fa-bars" class="mobile md:hidden text-2xl text-gray-700 cursor-pointer" ><img src="../images/icons8-bars-80.png" alt=""></i></a>
-
-            
+        <!-- hamburger button  -->
+          <div class="">
+            <ul class="navbar flex-1 flex gap-8 justify-center">
+              <li class="">
+                <a class="hover:bg-gray-500 transition ease" href="">Home</a>
+              </li>
+              <li class="hover:bg-gray-500 transition ease-in">
+                <a class="hover:bg-gray-500 transition ease-in" href="">About Us</a>
+              </li>
+              <li class="">
+                <a class="hover:bg-gray-500 transition ease" href="">Categories</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+          <div class="flex items-center gap-3">
+            <button class="text-primary py-2 px-4 rounded-lg border border-blue-600 hover:bg-sky-600 hover:text-white transition ease-in-out duration-300">Log in</button>
+            <button class="text-primary py-2 px-4 rounded-lg border border-blue-600 hover:bg-sky-700 hover:text-white transition ease-in-out duration-300">Sign In</button>
+          </div>
+      </nav>
    </header>
 
   <main class="mt-1">
@@ -68,7 +51,7 @@
             
           </h4>
 
-          <p class="mt-2 text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed font-mono">
+          <p class="mt-2 text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed">
              School4u is a platform that helps parents match with schools that meet their criteria. 
             Parents can input their preferences such as budget, location, and more.
           </p>
@@ -76,7 +59,7 @@
          <div class="relative flex flex-col sm:flex-row justify-center lg:justify-start mt-4 gap-2 sm:gap-0">
             <div class="relative flex-grow sm:flex-grow-0">
               <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <svg class="h-4 w-4 text-gray-400 pl-3" xmlns="http://www.w3.org/2000/svg" 
+                <svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" 
                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                  <circle cx="11" cy="11" r="8" />
@@ -86,7 +69,7 @@
              <input type="text"
                placeholder="What will you like to know"
                class="py-2 px-3 ps-8 block w-full sm:w-64 border border-gray-200 rounded-l-xl 
-                 text-sm focus:border-blue-500 focus:ring-blue-500 outline-none shadow-sm ">
+                 text-sm focus:border-blue-500 focus:ring-blue-500 outline-none shadow-sm">
             </div>
             <button type="button"
               class="py-2 px-5 bg-blue-600 text-white rounded-r-xl hover:bg-blue-700 transition text-sm">
@@ -100,7 +83,85 @@
            </a>
          </div>
        </div>
-      </div> 
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+      <!-- <div class="mt-3 sm:mt-5 ">
+        <h4 class="text-2xl  sm:text-3xl md:text=4xl font-bold leading-snug">Let’s Help You <span class="text-orange-400">Find The</span> 
+          <p class="text-2xl sm:text-3xl md:text-4xl font-bold mt-1">Right School <span class="text-orange-400">Easily</span></p>
+        </h4>
+        <p class="mt-3 text-slate-500 text-sm sm:text-base  lg:mx-0 leading-relaxed">
+          School4u is a platform that helps parent match with schools that meet their criteria. Parents can input their preferences on the platform such as budget, location and many more 
+        </p>
+
+        <div class="relative flex flex-col sm:flex-row justify-center lg:justify-start mt-5 sm:mt-6 gap-3 sm:gap-0">
+          <div class="relative flex-grow sm:flex-grow-0">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+              <svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" 
+               width="24" 
+               height="24" 
+               viewBox="0 0 24 24" 
+               fill="none" stroke="currentColor" 
+                stroke-width="2" stroke-linecap="round" 
+               stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+              </svg>
+
+            </span>
+            <input type="text" id="hs-trailing-button-add-on-with-icon-and-button" 
+            name="hs-trailing-button-add-on-with-icon-and-button" 
+            class="py-3 px-4 ps-10 block w-full sm:w-80 border border-gray-100 shadow-sm rounded-2xl 
+            sm:rounded-s-2xl
+            text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 
+            disabled:opacity-50 
+            disabled:pointer-events-none outline-none"
+            placeholder="What will you like to know">
+
+          </div>
+          <button type="button" 
+            class="py-3 px-6 inline-flex justify-center items-center 
+            gap-x-2 text-sm 
+            font-semibold rounded-2xl 
+            sm:rounded-e-xl border 
+            border-transparent bg-blue-600 text-white hover:bg-blue-700 
+            transition duration-200 
+            disabled:opacity-50">
+            Search
+          </button>
+        </div>
+
+        <div class="mt-6 sm:mt-8">
+           <a href="#" class="text-blue-500 text-sm sm:text-base font-medium hover:underline" >View our schools &rarr;</a>
+        </div>
+
+
+      </div> -->
+      <!-- <div class="col-span-1 flex justify-center lg:justify-end mt-8 lg:mt-0">
+        <img src="../images/edtech girl.jpg" 
+         alt="an image" 
+         class="w-64 sm:w-80 md:w-96 lg:w-full h-52 sm:h-60 md:h-72 object-cover rounded-2xl shadow-md "
+        />
+      </div> -->
+      
     </div>
 
     <div class="container mx-auto px-4 sm:px-6 md:px-8 py-11 mt-9">
@@ -195,7 +256,7 @@
         <!-- <div class=" absolute bottom-[-25px] right-6 flex flex-col items-center">        
           <img src="../images/allher-agent-Sam-original.jpg" class="w-16 h-16 rounded-full border-4 border-white shadow-md object-cover" alt="an image">
           <p class="text-gray-900 mt-2 font-semibold">Damilola</p>
-        </div>  
+        </div>  -->
       </div>
 
       <div class="card-2">

@@ -52,7 +52,7 @@
 /* Active sidebar (visible) */
 
 .navbar{
-     position: fixed;
+    position: fixed;
       top: 0;
       right: -100%;
       width: 250px;
@@ -79,33 +79,6 @@
 .navbar li{
     margin-bottom: 10px;
     margin-top: 10px;
-    
-}
-
-/* nav link underline hover effect */
-.navbar li a {
-  position: relative;
-  color: #1e293b; /* default text color */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navbar li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px; /* space between text and underline */
-  width: 0%;
-  height: 2px;
-  background-color: #1D4ED8; /* Tailwind's bg-blue-700 */
-  transition: width 0.3s ease-in-out;
-}
-
-.navbar li a:hover::after {
-  width: 100%; /* underline expands on hover */
-}
-.navbar li a:hover{
-    color: #1d4ed8;
 }
 
 /* close icon */
@@ -116,6 +89,8 @@
     font-size: 28px;
     cursor: pointer;
     color: #1e293b;
+   
+    
     z-index: 200;
     opacity: 1;
     display: block;
@@ -183,6 +158,11 @@
      
     
 }
+
+
+
+
+
 
 .hero{
     background-image: url(../images/edtech\ girl.jpg);
@@ -258,10 +238,25 @@
     .overlay-box p{
         font-size: 0.85rem;
 
-    }    
+    }
+    /* .navbar{
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    } */
+    /* #bar, #close{
+        display: none;
+        div class="mobile flex gap-3"
+    } */
+
+
+
+    
 }
-
-
 @media (max-width: 400px) {
   .hero {
     height: 70vh; /* expand hero slightly to allow breathing space */

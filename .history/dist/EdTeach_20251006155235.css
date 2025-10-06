@@ -1,0 +1,203 @@
+
+
+
+  
+
+
+ 
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 30px;
+    line-height: 1.6;
+}
+.content h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.content p{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+.testimonail-container{
+    background-color: #a5b0e6;
+}        
+    
+
+ /* .testimonial{
+    lg:text-left
+    max-w-lg
+    mx-auto
+}  */
+
+
+/* .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px 80px; */
+    /* background: #fff; */
+    /* box-shadow: 0 5px 15px rgba(0 , 0, 0, 0.6); */
+    /* z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0; */
+
+
+.header{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* sidebar styles for mobile */
+.navbar{
+    position: fixed;
+    top: 0;
+    right: -100px;
+    width: 260px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 80px 30px;
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
+}
+/* Active sidebar (visible) */
+.navbar.active{
+    right: 0;
+}
+
+/* Nav links inside sidebar */
+.navbar li{
+    margin-bottom: 20px;
+}
+
+/* close icon */
+#close{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.hero{
+    background-image: url(../images/edtech\ girl.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 80px;
+    color: #fff;
+    z-index: 1;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+
+}
+.overlay-box{
+    background: white;
+    color: #1e293b;
+    padding: 25px 30px;
+    border-radius: 10px;
+    max-width: 420px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    position: relative;
+    margin-top: 150px;
+    /* margin-left: 0; */
+}
+
+
+@media (max-width: 768px) {
+    .hero{
+        justify-content: center;
+        padding: 10px 10px 10px;
+        height: 50vh;
+        background-position: center top;
+        /* background-position: bottom top; */
+
+    }
+    .overlay-box{
+        padding: 20px;
+        max-width: 90%;
+        margin: 100px auto  0 auto;
+        text-align: center;
+    }
+    .overlay-box h4{
+        font-size: 1.1rem;
+    }
+    .overlay-box p{
+        font-size: 0.85rem;
+
+    }
+    .navbar{
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+    #bar, #close{
+        display: none;
+    }
+
+
+
+    
+}
+@media (max-width: 400px) {
+  .hero {
+    height: 70vh; /* expand hero slightly to allow breathing space */
+    padding: 0 20px; /* reduce side padding */
+    background-position: center top; /* keep image centered */
+  }
+
+  .overlay-box {
+    width: 100%;
+    padding: 16px;
+    margin: 200px auto; /* center the box horizontally */
+    bottom: -70px; /*bring it up a bit from bottom */
+  }
+
+  .overlay-box h4,
+  .overlay-box p {
+    font-size: 0.9rem; /* smaller text for mobile */
+    line-height: 1.4;
+  }
+
+  .overlay-box input {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .overlay-box button {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}
+
+  
+

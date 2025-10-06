@@ -30,18 +30,8 @@
 
 
 
-/* Frosted glass effect for header */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
-  background-color: rgba(255, 255, 255, 0.7); /* semi-transparent white */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  z-index: 50;
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+.header{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -52,21 +42,20 @@
 /* Active sidebar (visible) */
 
 .navbar{
-     position: fixed;
+    position: fixed;
       top: 0;
       right: -100%;
       width: 250px;
       height: 100vh;
      background-color: #fff;
-      /* box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1); */
+      box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
      flex-direction: column;
-      align-items: flex-start;
+      /* align-items: flex-start; */
      /* justify-content: center; */
      padding: 80px 30px;
      transition: right 0.3s ease-in-out;
      z-index: 200;
 }
-
 
 
 
@@ -79,33 +68,6 @@
 .navbar li{
     margin-bottom: 10px;
     margin-top: 10px;
-    
-}
-
-/* nav link underline hover effect */
-.navbar li a {
-  position: relative;
-  color: #1e293b; /* default text color */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navbar li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px; /* space between text and underline */
-  width: 0%;
-  height: 2px;
-  background-color: #1D4ED8; /* Tailwind's bg-blue-700 */
-  transition: width 0.3s ease-in-out;
-}
-
-.navbar li a:hover::after {
-  width: 100%; /* underline expands on hover */
-}
-.navbar li a:hover{
-    color: #1d4ed8;
 }
 
 /* close icon */
@@ -116,6 +78,8 @@
     font-size: 28px;
     cursor: pointer;
     color: #1e293b;
+   
+    
     z-index: 200;
     opacity: 1;
     display: block;
@@ -154,16 +118,10 @@
         right: 0;
 
     }
-     .navbar-container{
-        /* flex: 1; */
+    .navbar-container{
+        flex: 1;
         display: flex;
-        justify-content: center;
-    }  
-    .mobilebtn{
-        margin-left: auto;
-        gap: 1rem;
-     
-    }  
+    }
     #fa-bars, #close{
         display: none;
     }
@@ -172,10 +130,8 @@
     }
     .mobile{
         display: flex;
-        /* align-items: center; */
+        align-items: center;
         gap: 1rem;
-        justify-content: end;
-
     }
     .menu-icon{
         display: none;
@@ -183,6 +139,11 @@
      
     
 }
+
+
+
+
+
 
 .hero{
     background-image: url(../images/edtech\ girl.jpg);
@@ -258,10 +219,24 @@
     .overlay-box p{
         font-size: 0.85rem;
 
-    }    
+    }
+    /* .navbar{
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    } */
+    /* #bar, #close{
+        display: none;
+    } */
+
+
+
+    
 }
-
-
 @media (max-width: 400px) {
   .hero {
     height: 70vh; /* expand hero slightly to allow breathing space */

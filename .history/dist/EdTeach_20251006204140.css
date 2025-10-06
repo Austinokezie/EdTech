@@ -52,7 +52,7 @@
 /* Active sidebar (visible) */
 
 .navbar{
-     position: fixed;
+    position: fixed;
       top: 0;
       right: -100%;
       width: 250px;
@@ -116,6 +116,8 @@
     font-size: 28px;
     cursor: pointer;
     color: #1e293b;
+   
+    
     z-index: 200;
     opacity: 1;
     display: block;
@@ -183,6 +185,11 @@
      
     
 }
+
+
+
+
+
 
 .hero{
     background-image: url(../images/edtech\ girl.jpg);
@@ -258,10 +265,25 @@
     .overlay-box p{
         font-size: 0.85rem;
 
-    }    
+    }
+    /* .navbar{
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    } */
+    /* #bar, #close{
+        display: none;
+        div class="mobile flex gap-3"
+    } */
+
+
+
+    
 }
-
-
 @media (max-width: 400px) {
   .hero {
     height: 70vh; /* expand hero slightly to allow breathing space */
