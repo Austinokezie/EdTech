@@ -113,8 +113,8 @@
   .overlay-box {
     width: 100%;
     padding: 16px;
-    margin: 200px auto; /* center the box horizontally */
-    bottom: -60px; /*bring it up a bit from bottom */
+    margin: 140px auto; /* center the box horizontally */
+    /* bottom: 20px; bring it up a bit from bottom */
   }
 
   .overlay-box h4,
