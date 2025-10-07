@@ -370,11 +370,22 @@
 
   <script>
     gsap.registerPlugin(ScrollTrigger);
-       // 🟦 HERO FADE-IN FROM LEFT (runs automatically)
-        gsap.fromTo(".overlay-fade",
-         { opacity: 0, clipPath: "inset(0 100% 0 0)" },
-         { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 1.2, ease: "power2.out" }
-        );
+      gsap.fromTo(".overlay-fade",
+        { opacity: 0, x: -40 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+           trigger: ".overlay-fade",
+           start: "top 80%",      // fades in when the section enters view
+           end: "bottom 30%",     // starts fading out when near the bottom
+           toggleActions: "play reverse play reverse",
+           scrub: true,           // ties fade-in/out smoothly to scroll
+          }
+        }
+      );
 
 
 

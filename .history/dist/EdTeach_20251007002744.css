@@ -302,11 +302,6 @@
     transform: translateY(50px);
     transition: all 0.8s ease;
 }
-.overlay-fade{
-    opacity: 0;
-    clip-path: inset(0 100% 0 0);
-    transition: none;
-}
 
   
 

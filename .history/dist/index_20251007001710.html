@@ -59,7 +59,7 @@
     <div class="hero py-10 px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 items-center">
 
       <div class="hero">
-        <div class="overlay-box overlay-fade">
+        <div class="overlay-box">
           <h4 class="text-xl sm:text-2xl md:text-3xl font-bold leading-snug">
            Let’s Help You <span class="text-orange-400">Find The</span>
           </h4>
@@ -182,7 +182,7 @@
     <p class="text-sm mt-3 mb-12 text-blue-100">Some reviews from some of our users</p>
 
 
-    <div class=" grid gap-10 md:grid-cols-2 lg:grid-cols-3 justify-center">
+    <div class="testimonial grid gap-10 md:grid-cols-2 lg:grid-cols-3 justify-center">
       
       
      
@@ -370,18 +370,7 @@
 
   <script>
     gsap.registerPlugin(ScrollTrigger);
-       // 🟦 HERO FADE-IN FROM LEFT (runs automatically)
-        gsap.fromTo(".overlay-fade",
-         { opacity: 0, clipPath: "inset(0 100% 0 0)" },
-         { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 1.2, ease: "power2.out" }
-        );
 
-
-
-
-
-
-    //TESTIMONIALS CARDS REVEAL
     gsap.utils.toArray(".reveal").forEach((card, index) => {
       //
       let fromX = 0;
@@ -402,7 +391,7 @@
       x:0,
       y: 0,
       scale: 1,
-      duration: 0.9,
+      duration: 0.7,
       ease: "power2.out",
       scrollTrigger: {
         trigger: card,
@@ -410,9 +399,8 @@
         end: "bottom 20%",
         toggleActions: "play reverse play reverse",
         scrub: true
-        // invalidateOnRefresh: true,
       },
-      //delay: index * 0.2 // stagger each card
+      delay: index * 0.2 // stagger each card
       }
     );
    });

@@ -108,7 +108,25 @@ window.addEventListener("scroll", () => {
 //     });
 // });
 
+gsap.registerPlugin(ScrollTrigger);
 
+gsap.utils.toArray(".reveal").forEach((card, index) => {
+  gsap.fromTo(
+    card,
+    { opacity: 0, y: 50 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: card,
+        start: "top 80%", // when top of card hits 80% of viewport height
+        toggleActions: "play none none none"
+      },
+      delay: index * 0.2 // stagger each card
+    }
+  );
+});
 
 // window.addEventListener('scroll', reveal);
 // function reveal(){

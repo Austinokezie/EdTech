@@ -108,25 +108,43 @@ window.addEventListener("scroll", () => {
 //     });
 // });
 
+// gsap.registerPlugin(ScrollTrigger);
 
+// gsap.utils.toArray(".reveal").forEach((card, index) => {
+//   gsap.fromTo(
+//     card,
+//     { opacity: 0, y: 50 },
+//     {
+//       opacity: 1,
+//       y: 0,
+//       duration: 1,
+//       scrollTrigger: {
+//         trigger: card,
+//         start: "top 80%", // when top of card hits 80% of viewport height
+//         toggleActions: "play none none none"
+//       },
+//       delay: index * 0.2 // stagger each card
+//     }
+//   );
+// });
 
-// window.addEventListener('scroll', reveal);
-// function reveal(){
-//         var reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', reveal);
+function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
 
-//         for(var i = 0; i < reveals.length; i++){
-//           var windowheight = window.innerHeight;
-//           var revealtop = reveals[i].getBoundingClientRect().top;
-//           var revealpoint = 150;
+        for(var i = 0; i < reveals.length; i++){
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
 
-//           if(revealtop < windowheight - revealpoint){
-//             reveals[i].classList.add('active');
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
 
-//           }
+          }
 
-//           else{
-//             reveals[i].classList.remove('active');
-//           }
-//         }
-//       }
+          else{
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
 

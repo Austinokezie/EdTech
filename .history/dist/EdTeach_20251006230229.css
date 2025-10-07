@@ -26,10 +26,7 @@
     background-color: #a5b0e6;
 }        
     
-.testimonial{
-    position: relative;
-    overflow: hidden;
-}
+
 
 
 
@@ -297,15 +294,10 @@
   }
 }
 
-.reveal{
+.card1 .reveal{
     opacity: 0;
     transform: translateY(50px);
-    transition: all 0.8s ease;
-}
-.overlay-fade{
-    opacity: 0;
-    clip-path: inset(0 100% 0 0);
-    transition: none;
+    transition: opacity 0.8s ease transform 0.8s ease;
 }
 
   
